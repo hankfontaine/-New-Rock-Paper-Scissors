@@ -24,7 +24,7 @@ header {
 }
 
 .footer {
-    padding-top: 240px;
+    padding-top: 20px;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -33,4 +33,3 @@ header {
     font-style: italic;
     text-shadow: 1px 1px hotpink;
   }
-
