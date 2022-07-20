@@ -1,11 +1,11 @@
 let humanScore = 0;
 let computerScore = 0;
 
-function computerInput() {
+const computerInput = () => {
   return Math.random();
-}
+};
 
-function computerPlay(inputValue) {
+const computerPlay = (inputValue) => {
   let result;
   if (inputValue < 0.33) {
     result = "BIG";
@@ -15,7 +15,7 @@ function computerPlay(inputValue) {
     result = "STANFORD";
   }
   return result;
-}
+};
 
 const userBig = document.querySelector(".big");
 const userAidan = document.querySelector(".aidan");
@@ -34,7 +34,7 @@ userStanford.addEventListener("click", (e) => {
 let playCount = 0;
 document.getElementById("roundNumber").innerHTML = playCount;
 
-function playRound(userPick, computerPick) {
+const playRound = (userPick, computerPick) => {
   let result;
   if (userPick == "BIG" && computerPick == "BIG") {
     result = "You both picked Big.  Honey, nobody wins here.";
@@ -74,7 +74,6 @@ function playRound(userPick, computerPick) {
     result = "Stop fooling around.";
     return result;
   }
-  // console.log(humanScore, computerScore, playCount);
   document.getElementById("resultsUpdate").innerHTML = result;
   document.getElementById("roundNumber").innerHTML = playCount;
   document.getElementById("playerWinTotal").innerHTML =
@@ -82,10 +81,9 @@ function playRound(userPick, computerPick) {
   document.getElementById("computerWinTotal").innerHTML =
     "Computer wins: " + computerScore;
   endGame();
-  // console.log(endGame());
-}
+};
 
-function endGame() {
+const endGame = () => {
   let outCome;
   console.log({ humanScore, computerScore, playCount });
   if (playCount === 5 && humanScore > computerScore) {
@@ -96,4 +94,4 @@ function endGame() {
 
   console.log({ outCome });
   document.getElementById("gameTime").innerHTML = outCome;
-}
+};
