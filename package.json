@@ -1,0 +1,23 @@
+{
+  "name": "new-rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hankfontaine/-New-Rock-Paper-Scissors.git"
+  },
+  "author": "Hank McGill hankfontaine@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hankfontaine/-New-Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/hankfontaine/-New-Rock-Paper-Scissors#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
